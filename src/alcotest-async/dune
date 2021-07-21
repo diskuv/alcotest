@@ -6,6 +6,6 @@
   alcotest
   async_kernel
   async_unix
+  core.time_unix
   base
-  core
-  core_kernel))
+  core_kernel.core))

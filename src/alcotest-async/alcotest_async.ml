@@ -8,7 +8,7 @@ let run_test timeout name fn args =
   | `Timeout ->
       Alcotest.fail
         (Printf.sprintf "%s timed out after %s" name
-           (Time.Span.to_string_hum timeout))
+           (Time_unix.Span.to_string_hum timeout))
 
 module Promise = struct
   include Deferred
